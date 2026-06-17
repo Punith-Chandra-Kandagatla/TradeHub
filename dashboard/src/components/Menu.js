@@ -40,7 +40,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="TradeHub_Logo.png" style={{ width: "15%", marginLeft:"10px" }} />
+      <img src="TradeHub_Logo.png" style={{ width: "15%", marginLeft:"10px" }} alt="Profile"/>
       <div className="menus">
         <ul>
           <li>
