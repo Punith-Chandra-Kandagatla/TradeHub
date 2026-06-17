@@ -12,7 +12,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3002/signup",
+        "https://tradehub-backend-aa95.onrender.com/signup",
         {
           username,
           email,

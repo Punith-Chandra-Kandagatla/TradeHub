@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3002/login",
+        "https://tradehub-backend-aa95.onrender.com/login",
         {
           email,
           password,
@@ -35,8 +35,8 @@ const Login = () => {
       );
 
       alert("Login Successful");
-      window.location.href =
-  `http://localhost:3001?token=${response.data.token}&username=${response.data.username}`;
+        window.location.href =
+    `http://localhost:3001?token=${response.data.token}&username=${response.data.username}`;
 
       setEmail("");
       setPassword("");
