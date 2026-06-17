@@ -36,7 +36,7 @@ const Login = () => {
 
       alert("Login Successful");
         window.location.href =
-    `http://localhost:3001?token=${response.data.token}&username=${response.data.username}`;
+`https://tradehub-dashboard-khaki.vercel.app?token=${response.data.token}&username=${response.data.username}`;
 
       setEmail("");
       setPassword("");
