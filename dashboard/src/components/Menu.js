@@ -32,7 +32,7 @@ const Menu = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("username");
 
-    window.location.href = "http://localhost:3000/login";
+    window.location.href = "https://tradehub-ebon.vercel.app/login";
   };
 
   const menuClass = "menu";
