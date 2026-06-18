@@ -153,7 +153,7 @@ const Home = () => {
 
     <div className="feature-image">
       <img
-        src="media/images/watchlist.png"
+        src="media/images/Watchlist.png"
         alt="Watchlist"
         className="watchlist-img"
       />
@@ -171,7 +171,7 @@ const Home = () => {
 
     <div className="feature-image">
       <img
-        src="media/images/holdings.png"
+        src="media/images/Holdings.png"
         alt="Holdings"
       />
     </div>
@@ -188,7 +188,7 @@ const Home = () => {
 
     <div className="feature-image">
       <img
-        src="media/images/orders.png"
+        src="media/images/Orders.png"
         alt="Orders"
       />
     </div>
