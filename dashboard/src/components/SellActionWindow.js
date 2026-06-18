@@ -15,7 +15,7 @@ const SellActionWindow = ({ uid }) => {
 
   const { closeSellWindow, refreshData } = useContext(GeneralContext);
   // const handleBuyClick = () => {
-  //   axios.post("http://localhost:3002/newOrder", {
+  //   axios.post("https://tradehub-backend-aa95.onrender.com/newOrder", {
   //     name: uid,
   //     qty: stockQuantity,
   //     price: stockPrice,
@@ -27,7 +27,7 @@ const SellActionWindow = ({ uid }) => {
 
   useEffect(() => {
   axios
-    .get("http://localhost:3002/allHoldings", {
+    .get("https://tradehub-backend-aa95.onrender.com/allHoldings", {
       headers: {
         Authorization: localStorage.getItem("token"),
       },
@@ -42,7 +42,7 @@ const SellActionWindow = ({ uid }) => {
       }
 
       axios
-        .get(`http://localhost:3002/stock/${uid}`)
+        .get(`https://tradehub-backend-aa95.onrender.com/stock/${uid}`)
         .then((res) => {
           setStockPrice(res.data.price);
         })
@@ -70,7 +70,7 @@ const SellActionWindow = ({ uid }) => {
     console.log("Sending order...");
 
     const response = await axios.post(
-      "http://localhost:3002/newOrder",
+      "https://tradehub-backend-aa95.onrender.com/newOrder",
       {
         name: uid,
         qty: stockQuantity,

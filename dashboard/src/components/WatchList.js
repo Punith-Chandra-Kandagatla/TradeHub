@@ -33,7 +33,7 @@ const WatchList = () => {
   useEffect(() => {
     const fetchStocks = () => {
       axios
-        .get("http://localhost:3002/allStocks")
+        .get("https://tradehub-backend-aa95.onrender.com/allStocks")
         .then((res) => {
           setWatchlist(res.data);
         })

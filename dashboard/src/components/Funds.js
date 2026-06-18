@@ -18,7 +18,7 @@ const Funds = () => {
   const token = localStorage.getItem("token");
 
   axios
-    .get("http://localhost:3002/allHoldings", {
+    .get("https://tradehub-backend-aa95.onrender.com/allHoldings", {
       headers: {
         Authorization: token,
       },
@@ -31,7 +31,7 @@ const Funds = () => {
     });
 
   axios
-    .get("http://localhost:3002/balance", {
+    .get("https://tradehub-backend-aa95.onrender.com/balance", {
       headers: {
         Authorization: token,
       },
@@ -46,7 +46,7 @@ const Funds = () => {
     });
 
     axios
-  .get("http://localhost:3002/fundsHistory", {
+  .get("https://tradehub-backend-aa95.onrender.com/fundsHistory", {
     headers: {
       Authorization: token,
     },
@@ -94,7 +94,7 @@ const Funds = () => {
     const token = localStorage.getItem("token");
 
     const res = await axios.post(
-      "http://localhost:3002/addFunds",
+      "https://tradehub-backend-aa95.onrender.com/addFunds",
       {
         amount: Number(amount),
       },
@@ -125,7 +125,7 @@ refreshData();
     const token = localStorage.getItem("token");
 
     const res = await axios.post(
-      "http://localhost:3002/withdrawFunds",
+      "https://tradehub-backend-aa95.onrender.com/withdrawFunds",
       {
         amount: Number(amount),
       },

@@ -8,7 +8,7 @@ const Positions = () => {
     const token = localStorage.getItem("token");
 
     axios
-      .get("http://localhost:3002/allHoldings", {
+      .get("https://tradehub-backend-aa95.onrender.com/allHoldings", {
         headers: {
           Authorization: token,
         },

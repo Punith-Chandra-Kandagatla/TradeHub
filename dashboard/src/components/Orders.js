@@ -8,7 +8,7 @@ const Orders = () => {
   const { refreshFlag } = useContext(GeneralContext);
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allOrders", {
+      .get("https://tradehub-backend-aa95.onrender.com/allOrders", {
         headers: {
           Authorization: localStorage.getItem("token"),
         },
