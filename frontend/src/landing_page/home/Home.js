@@ -153,7 +153,7 @@ const Home = () => {
 
     <div className="feature-image">
       <img
-        src="media/images/Watchlist.png"
+        src="media/images/WatchList.png"
         alt="Watchlist"
         className="watchlist-img"
       />
